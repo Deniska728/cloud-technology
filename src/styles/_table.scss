@@ -1,0 +1,46 @@
+.table-container {
+  .table {
+    font-size: 14px;
+    border-radius: 5px;
+
+    td, th {
+      vertical-align: middle;
+      width: 200px;
+      max-width: 200px;
+      min-width: 160px;
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    .search-input {
+      border: 0;
+      outline: none;
+    }
+
+    .date-cell {
+      white-space: nowrap;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 0.2rem 0.75rem;
+    }
+
+    .collapse-row {
+      .collapse-cell {
+        border: 0;
+        padding: 0;
+
+        .collapse-content {
+          background-color: #fafafa;
+          padding: 10px 0;
+          border-top: 1px solid #dee2e6;
+
+          .search-input {
+            background-color: #fafafa;
+          }
+        }
+      }
+    }
+  }
+}

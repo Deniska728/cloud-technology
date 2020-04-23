@@ -1,0 +1,110 @@
+.modal-card.modal-dialog {
+  max-width: 650px;
+
+  .modal-title {
+    line-height: 34px;
+
+    .input-container {
+      min-width: 365px;
+      margin-left: 0;
+
+      &.text {
+        padding: 0 0 0 10px;
+      }
+
+      input {
+        height: 34px;
+      }
+
+      .update, .cancel {
+        top: 0;
+        bottom: initial;
+      }
+  
+      .update {
+        right: -87px;
+      }
+  
+      .cancel {
+        right: -170px;
+      }
+    }
+  }
+
+  .modal-body-content {
+    display: flex;
+  
+    .left-side, .right-side {
+      padding: 10px;
+    }
+  
+    .small {
+      font-size: 14px;
+    }
+
+    .left-side {
+      width: 60%;
+    }
+  
+    .right-side {
+      width: 40%;
+  
+      .title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      .date-container {
+        color: #707070;
+        font-size: 12px;
+        padding: 10px 10px;
+  
+        .created, .updated {
+          display: inline-block;
+        }
+  
+        .updated {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+.input-container {
+  position: relative;
+  margin-left: -10px;
+
+  textarea {
+    resize: none;
+    font-size: 14px;
+  }
+
+  .update, .cancel {
+    position: absolute;
+    bottom: -45px;
+    font-size: 14px;
+    z-index: 1000;
+  }
+
+  .update {
+    right: 85px;
+  }
+
+  .cancel {
+    right: 0px;
+  }
+
+  &.text {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+    overflow-wrap: anywhere;
+
+    &:hover {
+      background-color: #091e4214;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.board {
+  &>div {
+    overflow-y: initial;
+
+    &>div>div {
+      background-color: #f4f5f7;
+    }
+  }
+}
